@@ -1,3 +1,31 @@
-<div class="page">
-    <h1>Hello. I'm table page</h1>
-</div>
+<app-table [dataSource]="dataSource"></app-table>
+
+<br>
+<form class="input" class="input" [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <mat-form-field appearance="fill">
+        <mat-label>Enter your name</mat-label>
+        <input matInput placeholder="Hydrogen" formControlName="name">
+    </mat-form-field>
+    <br>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Enter your weight</mat-label>
+        <input matInput placeholder="1.0079" formControlName="weight">
+    </mat-form-field>
+    <br>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Enter your symbol</mat-label>
+        <input matInput placeholder="H" formControlName="symbol">
+    </mat-form-field>
+    <br>
+
+    <button type="submit" mat-raised-button color="primary">
+        submit
+    </button>
+</form>
+
+<!-- <button type="button" mat-raised-button color="primary" (click)="test()">
+    Test
+</button> -->
