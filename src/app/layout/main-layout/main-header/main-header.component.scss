@@ -1,0 +1,34 @@
+nav {
+    width: 100%;
+    background: #0a090a;
+}
+
+ul {
+    color: white;
+    list-style-type: none;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    padding: 15px 10px;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.button {
+    display: flex;
+    width: auto;
+    margin-right: 10px;
+}

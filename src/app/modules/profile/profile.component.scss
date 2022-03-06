@@ -1,0 +1,13 @@
+@import url(../../app.component.scss);
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
